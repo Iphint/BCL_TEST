@@ -28,5 +28,5 @@ Tabel:
 - Pelacakan pengiriman
 - CRUD Armada + Filter
 - Pemesanan armada + validasi
-- Check-in lokasi peta (Google Maps)
+- Check-in lokasi peta (Google Maps), / Menggunakan Leaflet Js
 - Laporan pengiriman per armada
