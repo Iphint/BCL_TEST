@@ -13,8 +13,12 @@
                 @foreach($checkIns as $ci)
                     <li class="list-group-item">
                         <strong>Armada:</strong> {{ $ci->fleet->fleet_number }} 
-                        - <strong>Lokasi:</strong> Lat: {{ $ci->latitude }}, Lng: {{ $ci->longitude }}
-                        - <strong>Waktu:</strong> {{ $ci->checked_at }}
+                        - <strong>Lokasi:</strong> 
+                          <a href="https://www.google.com/maps?q={{ $ci->latitude }},{{ $ci->longitude }}" 
+                             target="_blank" class="text-decoration-none">
+                             Klik disini
+                          </a>
+                        - <strong>Waktu Cek In:</strong> {{ $ci->checked_at }}
                     </li>
                 @endforeach
             </ul>
